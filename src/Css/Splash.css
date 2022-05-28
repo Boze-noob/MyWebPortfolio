@@ -7,6 +7,12 @@
     color: #08FDD8;
     text-align: center;
     padding-top: 250px;
- 
+}
 
+.LottieAnimation {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    text-align: center;
 }
