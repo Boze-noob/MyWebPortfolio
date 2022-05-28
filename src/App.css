@@ -1,0 +1,82 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1d;
+}
+
+.Sidebar {
+  height: 100%;
+  width: 120px;
+  font-size: large;
+  background-color: #181818;
+}
+
+.Sidebar #bottomIcons{
+  color: #515154;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Sidebar #githubIcon{
+  padding: 10px;
+}
+
+.Sidebar #linkedInIcon{
+  padding: 10px;
+}
+
+.Sidebar .BasicInfoBloc {
+  background-color: black;
+  text-align: center;
+  font-size: small;
+  color: #8D8D8D;
+  padding: 20px 0 20px 0;
+  
+}
+
+.BasicInfoBloc #image {
+  width: 100px;
+}
+
+.BasicInfoBloc #name {
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+.SidebarList {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.SidebarList .Row {
+  height: 50px;
+  width: 100%;
+  color: #8D8D8D;
+    overflow: hidden;
+    white-space: nowrap;
+  list-style-type: none;
+  border-bottom: 1px solid #8D8D8D;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.Row #title {
+  top: 25%;
+  position: relative;
+}
+
+.SidebarList .Row:hover{
+  cursor: pointer;
+  color: #08FDD8;
+}
+
+.SidebarList #active{
+  color: #08FDD8;
+}
