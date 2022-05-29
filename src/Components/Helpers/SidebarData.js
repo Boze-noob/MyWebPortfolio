@@ -14,8 +14,8 @@ export const SidebarData = [
         link: "/mySkills"   
     },
     {
-        title: "Work",
-        link: "/work"   
+        title: "Projects",
+        link: "/projects"   
     },
     {
         title: "About Me",

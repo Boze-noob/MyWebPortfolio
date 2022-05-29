@@ -27,13 +27,13 @@ function Splash() {
             show ? <Typewriter 
           onInit={(typewriter) => {
               typewriter
-              .pauseFor(1000)
+              .pauseFor(500)
               .typeString('Hello there !')
-              .pauseFor(1000)
+              .pauseFor(800)
               .deleteAll(30)
               .typeString('Welcome to my portfolio !')
               .pauseFor(1000)
-              .deleteAll(30)
+              .deleteAll(10)
               .callFunction(async () => {
                   setShow(false);
                   Lottie.play();

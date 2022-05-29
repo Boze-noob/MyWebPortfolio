@@ -1,0 +1,31 @@
+Button::before{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #21b6ae;
+  
+  transition: transform 250ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+Button:hover::before,
+Button:focus::before {
+  transform: scaleX(1);
+  
+}
+
+Button {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+}
+
+
+Button:hover,
+Button:focus {
+    color: black;
+}
