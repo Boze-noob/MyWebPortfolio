@@ -1,11 +1,22 @@
 import '../Css/Intro.css';
 import Button from '../Components/Button.js';
 import { motion } from 'framer-motion';
+import useSound from 'use-sound';
+import mySound from '../Audio/background_sound.mp3'
+
 
 function Intro() {
   const titleTxt = 'Hi! \nI am Bože, \nmobile developer.';
+  const [playSound] = useSound(mySound)
+  
   return (
     <div className="Intro">
+      <div id='soundBtn'>
+      <button onClick={playSound}>
+       Play Sound
+    </button>
+      </div>
+      <div id='description'>
       {
         titleTxt.split('\n').map(function(txt){
           return <motion.p transition={{ type: 'tween', duration: 0.3 }}
@@ -18,6 +29,8 @@ function Intro() {
       <div id='button'>
       <Button value = {'Contact me'} />
       </div>
+      </div>
+     
     </div>
   );
 }
