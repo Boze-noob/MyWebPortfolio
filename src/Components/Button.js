@@ -6,8 +6,9 @@ function ButtonComp(buttonTxt) {
     <Button variant="outlined" size='large'  style={{
         borderWidth: 2,
         borderColor: "#21b6ae",
-        fontFamily: 'Lucida Sans Unicode',
-        color: 'white'
+        fontFamily: "Lucida Sans",
+        color: 'white',
+        padding: '10px 35px 10px 35px'
     }}>{buttonTxt.value}</Button>
   );
 }

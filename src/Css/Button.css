@@ -7,7 +7,6 @@ Button::before{
   right: 0;
   z-index: -1;
   background-color: #21b6ae;
-  
   transition: transform 250ms ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
