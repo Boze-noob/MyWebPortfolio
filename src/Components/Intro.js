@@ -1,5 +1,6 @@
 import '../Css/Intro.css';
-import Button from '../Components/Button.js'
+import Button from '../Components/Button.js';
+import { motion } from 'framer-motion';
 
 function Intro() {
   const titleTxt = 'Hi! \nI am Bože, \nmobile developer.';
@@ -7,7 +8,10 @@ function Intro() {
     <div className="Intro">
       {
         titleTxt.split('\n').map(function(txt){
-          return <p id='title'>{txt}</p>
+          return <motion.p transition={{ type: 'tween', duration: 0.3 }}
+           whileHover={{ scale: 1.1, originX: -0.1, originY: -0.4, color: '#FD2155', }}
+           id='title'>
+             {txt}</motion.p>
         })
       }
       <p id='subTitle'>Android Native / Flutter</p>
