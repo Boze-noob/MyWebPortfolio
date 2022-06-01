@@ -12,6 +12,10 @@ import Lottie from 'react-lottie';
 function Intro() {
   const titleTxt = 'Hi! \nI am Bože, \nmobile developer.';
   const [musicFlag, switchMusic] = useState(true);
+  const variants = {
+    
+    stop: { y: [0, -10, 0], rotate: [0, 20, 0], transition: { repeat: Infinity, repeatDelay: 1 } }
+  };
   
 
   let audio = useRef(new Audio(mySound));
@@ -37,7 +41,7 @@ function Intro() {
       <img id='arrow_image' src='/images/arrow.jpg' />
       </div>
       <div id='music'>
-      <img id='sound_image' src='/images/sound.jpg' />
+      <motion.img variants={variants} animate={musicFlag ? 'rotate' : 'stop'} id='sound_image' src='/images/sound.jpg' />
       <motion.button whileHover={{ scale: 1.45}} transition={{duration: 0.4 }} onClick={musicFlag ? start : pause}>
        {musicFlag ? 'Play music' : 'Stop music'}
     </motion.button>
