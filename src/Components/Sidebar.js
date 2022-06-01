@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "../App.css";
 import {SidebarData} from "./Helpers/SidebarData";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Route } from 'react-router-dom';
 
 function Sidebar() {
+
+  const [sectionFlag, switchSection] = useState('/intro');
+
   return (
     <div className='Sidebar'>
       <div className='BasicInfoBloc'>
@@ -16,9 +20,25 @@ function Sidebar() {
       {SidebarData.map((val, key) =>{
       return <li key={key}
       className="Row"
-      id={window.location.pathname == val.link ? "active" : ""}
+      id={sectionFlag == val.link ? "active" : ""}
       onClick ={() => {
-        window.location.pathname = val.link
+        var componentId;
+        console.log(sectionFlag);
+        if(val.link === '/intro'){
+          componentId = 'introId';
+        } else if(val.link === '/mySkills'){
+          componentId = 'mySkillsId';
+        }  else if(val.link === '/projects'){
+          componentId = 'projectsId';
+        }  else if(val.link === '/aboutMe'){
+          componentId = 'aboutMeId';
+        }  else{
+          componentId = 'contactId';
+        }
+        const anchor = document.getElementById(componentId);
+        anchor.scrollIntoView({behavior:'smooth', block: 'center'});
+
+        switchSection(val.link);
         }
         }>
         <div id='title'>{val.title}</div>

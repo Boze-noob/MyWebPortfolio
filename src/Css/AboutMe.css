@@ -1,1 +1,4 @@
-.AboutMe {}
+.AboutMe {
+    background-color: yellow;
+    height: 500px;
+}

@@ -35,7 +35,7 @@ function Intro() {
   }
   
   return (
-    <motion.div initial={{opacity:0}} animate={{opacity: 1}}  className="Intro">
+    <motion.div initial={{opacity:0}} animate={{opacity: 1}}  className="Intro" id='introId'>
       <div id='arrow'>
       <h2 id='arrow_desc'>{musicFlag ? 'Turn on the music!' : 'Turn off the music!'}</h2>
       <img id='arrow_image' src='/images/arrow.jpg' />

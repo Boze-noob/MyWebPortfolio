@@ -3,7 +3,7 @@ import '../Css/MySkills.css'
 
 function MySkills() {
   return (
-    <div className="MySkills">
+    <div className="MySkills" id='mySkillsId'>
       
     </div>
   );
