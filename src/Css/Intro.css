@@ -12,13 +12,19 @@
     width: 100vw;
     margin: 0;
     position: absolute;
-    
-    
 }
 
 .Intro .JetpackAnimation{
     width: 200px;
     height: 200px;
+}
+
+.Intro .ProgrammingAnim{
+    width: 330px;
+    height: 330px;
+    position: absolute;
+    top: 410px;
+    right: 510px;
 }
 
 .Intro #description{

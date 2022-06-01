@@ -4,13 +4,15 @@ import { motion } from 'framer-motion';
 import mySound from '../Audio/background_sound.mp3'
 import React, {useState, useRef } from 'react';
 
-import animationData from '../Animations/android_jetpack.json';
-import Lottie from 'lottie-react-web';
+import androidJetpackAnim from '../Animations/android_jetpack.json';
+import programmingAnim from '../Animations/guy_programming.json';
+import Lottie from 'react-lottie';
 
 
 function Intro() {
   const titleTxt = 'Hi! \nI am Bože, \nmobile developer.';
   const [musicFlag, switchMusic] = useState(true);
+  
 
   let audio = useRef(new Audio(mySound));
   audio.current.addEventListener('ended', function () {
@@ -29,9 +31,9 @@ function Intro() {
   }
   
   return (
-    <div className="Intro">
+    <motion.div initial={{opacity:0}} animate={{opacity: 1}}  className="Intro">
       <div id='arrow'>
-      <h2 id='arrow_desc'>Turn on the music!</h2>
+      <h2 id='arrow_desc'>{musicFlag ? 'Turn on the music!' : 'Turn off the music!'}</h2>
       <img id='arrow_image' src='/images/arrow.jpg' />
       </div>
       <div id='music'>
@@ -42,8 +44,9 @@ function Intro() {
       </div>
       <div className='JetpackAnimation'>
       <Lottie 
+     isPaused={musicFlag ? true : false}
       options={{
-        animationData: animationData,
+        animationData: androidJetpackAnim,
         loop: true,
         autoplay: false,
       }} />
@@ -64,8 +67,19 @@ function Intro() {
       <Button value = {'Contact me'} />
       </div>
       </div>
+      
+      <div className='ProgrammingAnim'>
+      <Lottie 
+      isPaused={musicFlag ? true : false}
+      options={{
+        animationData: programmingAnim,
+        loop: true,
+        autoplay: !musicFlag,
+      }} />
+      
+      </div>
      
-    </div>
+    </motion.div>
   );
 }
 
