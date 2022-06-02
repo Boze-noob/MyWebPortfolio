@@ -1,23 +1,50 @@
+@media (max-width: 1500px) {
+    .MySkills .ProgressBars{
+        float: left;
+       margin: 0;
+        
+     }
+  }
+
 .MySkills {
     background-color: #1d1d1d;
     margin-top: 45px;
     margin-left: 170px;
     display: inline-block;
     width: 100vw;
-    height: 500px;
+    overflow: hidden;
 }
 
 .MySkills .Title{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 50px;
+    font-size: 55px;
     margin: 0;
     font-weight: bold;
     text-shadow: 4px 2px #21b6ae;
     color: white;
-    
+    display: inline-block;
+    float: left;
 }
 
 .MySkills .Title p{
     margin: 10px;
-    
+}
+
+.MySkills .Description{
+    color: white;
+    font-size: medium;
+    line-height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 38%;
+    padding-top: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    float: left;
+    clear: left;
+}
+
+.MySkills .ProgressBars{
+   float: right;
+   margin-right: 15%;
+   
 }
