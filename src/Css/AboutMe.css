@@ -1,4 +1,6 @@
 .AboutMe {
-    background-color: yellow;
+    background-color: #1d1d1d;
     height: 500px;
+    display: inline-block;
+    width: 100vw;
 }

@@ -1,4 +1,23 @@
 .MySkills {
-    background-color: red;
+    background-color: #1d1d1d;
+    margin-top: 45px;
+    margin-left: 170px;
+    display: inline-block;
+    width: 100vw;
     height: 500px;
+}
+
+.MySkills .Title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 4px 2px #21b6ae;
+    color: white;
+    
+}
+
+.MySkills .Title p{
+    margin: 10px;
+    
 }
