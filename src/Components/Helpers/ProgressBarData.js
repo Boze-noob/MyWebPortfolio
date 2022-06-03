@@ -2,45 +2,52 @@ import React from 'react'
 
 export const ProgressBarData = [
     {
-        value: 20, 
+        value: 78, 
         max: 100, 
-        color: "#ff7979", 
+        color: "#E01E23", 
         width: "400px", 
-        text: "haj naleti sta je"
+        text: "Java"
     },
     {
-        value: 20, 
+        value: 50, 
         max: 100, 
-        color: "#ff7979", 
+        color: "#9b2ce2", 
         width: "400px", 
-        text: "haj naleti sta je"
+        text: "Kotlin"
     },
     {
-        value: 20, 
+        value: 70, 
         max: 100, 
-        color: "#ff7979", 
+        color: "#2aaeea", 
         width: "400px", 
-        text: "haj naleti sta je"
+        text: "Dart"
     },
     {
-        value: 20, 
+        value: 70, 
         max: 100, 
-        color: "#ff7979", 
+        color: "#ee7102", 
         width: "400px", 
-        text: "haj naleti sta je"
+        text: "XML"
     },
     {
-        value: 20, 
+        value: 75, 
         max: 100, 
-        color: "#ff7979", 
+        color: "#1067a5", 
         width: "400px", 
-        text: "haj naleti sta je"
+        text: "HTML/CSS"
     },
     {
-        value: 20, 
+        value: 45, 
         max: 100, 
-        color: "#ff7979", 
+        color: "#ead41c", 
         width: "400px", 
-        text: "haj naleti sta je"
+        text: "JavaScript"
+    },
+    {
+        value: 38, 
+        max: 100, 
+        color: "#f2a900", 
+        width: "400px", 
+        text: "SQL"
     },
 ]

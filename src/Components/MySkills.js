@@ -7,6 +7,12 @@ import {ProgressBarData} from "./Helpers/ProgressBarData.js";
 function MySkills() {
   return (
     <div className="MySkills" id='mySkillsId'>
+
+<div className="HoverItContainer">
+  <h2>Hover me</h2>
+<img src='/images/my_skills_arrow.jpg' />
+</div>
+      
       
       <div className='Title'>
       {

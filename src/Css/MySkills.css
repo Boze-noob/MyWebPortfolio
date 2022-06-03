@@ -2,7 +2,9 @@
     .MySkills .ProgressBars{
         float: left;
        margin: 0;
-        
+     }
+     .HoverItContainer{
+         display: none;
      }
   }
 
@@ -45,6 +47,26 @@
 
 .MySkills .ProgressBars{
    float: right;
-   margin-right: 15%;
-   
+   margin-right: 18%;
+   margin-bottom: 10px;
+}
+
+.HoverItContainer{
+    width: 260px;
+    float: right;
+    overflow: hidden;
+    padding-right: 20%;
+}
+
+.HoverItContainer h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: right;
+    color: #6D6D6D;
+    
+}
+
+.HoverItContainer img {
+    width: 150px;
+    height: 150px;
+    float: left;
 }
