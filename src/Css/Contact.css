@@ -1,6 +1,36 @@
 .Contact {
     background-color: #1d1d1d;
-    height: 500px;
     display: inline-block;
     width: 100vw;
+    margin-top: 45px;
+    margin-left: 170px;
+    margin-bottom: 30px;
+    
+}
+
+.Contact .Title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 55px;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 4px 2px #21b6ae;
+    color: white;
+    display: inline-block;
+    float: right;
+    clear: right;
+    margin-right: 20%;
+}
+
+.Contact .Description{
+    color: white;
+    font-size: medium;
+    line-height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 38%;
+    padding-top: 20px;
+    display: inline-block;
+    float: right;
+    clear: right;
+    margin-right: 20%;
+    
 }

@@ -1,3 +1,9 @@
+@media (max-width: 1500px) {
+   .Projects .Arrow{
+       display: none;
+   }
+}
+
 .Projects {
     background-color: #1d1d1d;
     margin-top: 45px;
@@ -49,6 +55,7 @@
     width: 300px;
     height: 200px;
     perspective: 1000px;
+    
   }
   
   .flip-card-inner {
@@ -94,7 +101,7 @@
     border: black 4px solid;
   }
 
-  .Projects .Arrow{
+  .Projects .Arrow {
     overflow: hidden;
     display: inline-block;
     float: left;
