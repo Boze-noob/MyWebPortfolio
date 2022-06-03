@@ -1,5 +1,6 @@
 import '../Css/Contact.css';
 import {motion} from 'framer-motion';
+import {TextField} from './TextField';
 
 
 function Contact() {
@@ -13,6 +14,7 @@ function Contact() {
     <div className='Description'>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
       </div>
+      <TextField />
     </div>
   );
 }
