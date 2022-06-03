@@ -1,6 +1,6 @@
 import '../Css/Contact.css';
 import {motion} from 'framer-motion';
-import {TextField} from './TextField';
+import TextField from '../Components/TextField.js';
 
 
 function Contact() {
