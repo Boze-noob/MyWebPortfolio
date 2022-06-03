@@ -1,6 +1,40 @@
 .Projects {
     background-color: #1d1d1d;
-    height: 500px;
+    margin-top: 45px;
+    margin-left: 170px;
     display: inline-block;
     width: 100vw;
+    overflow: hidden;
+    margin-top: 80px;    
+}
+
+.Projects .Title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 55px;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 4px 2px #21b6ae;
+    color: white;
+    display: inline-block;
+    float: right;
+    margin-right: 18%;
+}
+
+.Projects .Description{
+    color: white;
+    font-size: medium;
+    line-height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 38%;
+    margin-left: 10px;
+    display: inline-block;
+    float: right;
+    clear: right;
+    margin-right: 18%;
+}
+
+.Grid .Card{
+    box-shadow: 0 4px 8px 0 rgba(18, 121, 206, 0.2);
+  transition: 0.3s;
+  
 }
