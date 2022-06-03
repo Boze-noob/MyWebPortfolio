@@ -93,3 +93,27 @@
     color: #1d1d1d;
     border: black 4px solid;
   }
+
+  .Projects .Arrow{
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    clear: left;
+    margin-left: 30px;
+    margin-top: 80px;
+  }
+
+  .Projects .Arrow img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+
+  .Projects .Arrow h2{
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #6d6d6d;
+  }

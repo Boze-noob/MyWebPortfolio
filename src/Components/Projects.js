@@ -8,6 +8,10 @@ function Projects() {
 
   return (
     <div className="Projects" id='projectsId'>
+      <div className='Arrow'>
+        <img src='/images/projects_arrow.jpg'/>
+        <h2>Hover and click me!</h2>
+      </div>
       <div className='Title'>
        <motion.p transition={{ type: 'tween', duration: 0.3 }}
          whileHover={{ scale: 1.1, originX: 1.1, originY: -0.4, color: '#FD2155', }}>
