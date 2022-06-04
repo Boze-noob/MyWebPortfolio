@@ -1,6 +1,7 @@
 import '../Css/Contact.css';
 import {motion} from 'framer-motion';
 import ContactForm from './ContactForm.js';
+import GoogleMap from '../Components/GoogleMap.js';
 
 
 function Contact() {
@@ -16,6 +17,9 @@ function Contact() {
       </div>
       <div className='ContactForm'>
       <ContactForm />
+      </div>
+      <div className='GoogleMap'>
+      <GoogleMap />
       </div>
     </div>
   );
