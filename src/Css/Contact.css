@@ -32,5 +32,8 @@
     float: right;
     clear: right;
     margin-right: 20%;
-    
+}
+
+.ContactForm {
+    margin-top: 12%;
 }

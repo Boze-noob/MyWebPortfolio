@@ -1,9 +1,16 @@
 .form_group{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 0 0;
+}
+
+.form_group textarea{
+    resize: none;
 }
 
 .form_field{
-    width: 200px;
+    width: 250px;
     border: 0;
     border-bottom: 2px solid #9b9b9b;
     outline: 0;
@@ -11,6 +18,10 @@
     color: #fff;
     background-color: transparent;
     transition: border-color 0.2s;
+}
+
+.form_group textarea {
+    width: 450px;
 }
 
 .form_field::placeholder {
@@ -23,7 +34,7 @@
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #9b9b9b;
+    color: #6d6d6d;
 }
 
 .form_field:placeholder-shown ~ .form_label {
@@ -48,4 +59,8 @@
     font-size: 1rem;
     font-weight: 700;
     color: #2afadf;
+}
+
+.Button {
+    margin-top: 20px;
 }
