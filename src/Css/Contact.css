@@ -2,9 +2,10 @@
     background-color: #1d1d1d;
     display: inline-block;
     width: 100vw;
-    margin-top: 45px;
+    margin-top: 85px;
     margin-left: 170px;
     margin-bottom: 30px;
+    position: relative;
     
 }
 
@@ -35,9 +36,23 @@
 }
 
 .ContactForm {
-    margin-top: 12%;
+    margin-top: 5%;
+    border-left: 1px solid #29EFD2;
+    border-bottom: 1px solid #29EFD2;
+    display: inline-block;
+    padding: 40px 80px;
 }
 
-.GoogleMap{
-    
+.Contact img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 35%;
+}
+
+.GoogleMap {
+    float: right;
+    clear: right;
+    margin-right: 30%;
 }

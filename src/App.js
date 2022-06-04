@@ -15,6 +15,7 @@ function App() {
       <Projects />
       <AboutMe />
       <Contact />
+      <h3>Made by Boze-noob</h3>
     </div>
   );
 }

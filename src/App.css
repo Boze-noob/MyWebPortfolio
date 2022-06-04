@@ -83,3 +83,10 @@ body{
 .SidebarList #active{
   color: #08FDD8;
 }
+
+h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #08FDD8;
+  font-weight: bold;
+  margin-left: 50%;
+}

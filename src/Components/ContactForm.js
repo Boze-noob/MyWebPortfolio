@@ -9,14 +9,18 @@ function ContactForm(){
 
     function sendEmail(e){
         e.preventDefault();
-      
-        emailjs.sendForm('gmail', 'template_z045w7a', form.current, 'zr-D1roI6Vu2aq_Q3')
+        console.log("we enter into send email function");
+        console.log(form.current);
+        emailjs.sendForm('service_s1jtbm4', 'template_z045w7a', form.current, 'zr-D1roI6Vu2aq_Q3')
           .then((result) => {
+            alert('Email has been send! Thank you!');
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
+              alert('Some error happen, please try again later!');
           });
           e.target.reset();
+          
       }
 
 
@@ -32,7 +36,7 @@ function ContactForm(){
                             <label for="name" className="form_label">Email</label>
                         </div>
                         <div className="form_group">
-                            <input type="email" className="form_field" placeholder="Name" name="subject" />
+                            <input type="text" className="form_field" placeholder="Name" name="subject" />
                             <label for="name" className="form_label">Subject</label>
                         </div>
                         <div className="form_group">
@@ -40,7 +44,7 @@ function ContactForm(){
                             <label for="name" className="form_label">Message</label>
                         </div>
                         <div className="Button">
-                            <Button type="submit" className="btn btn-info" value="Send Message"></Button>
+                        <input type="submit" className="btn btn-info" value="Send Message"></input>
                         </div>
                     </div>
                 </form>
