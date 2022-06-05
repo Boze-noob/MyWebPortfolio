@@ -1,15 +1,22 @@
 import '../Css/MySkills.css';
+import {useContext} from 'react';
 import ProgressBar from './Progress';
 import { motion } from 'framer-motion';
 import {ProgressBarData} from "./Helpers/ProgressBarData.js"; 
-
+import {MusicFlag} from "../Components/Helpers/MusicContext.js";
 
 function MySkills() {
+  const {musicFlagValue, setMusicFlagValue} = useContext(MusicFlag);
+  const variants = {
+    
+    stop: { y: [0, -20, 0], rotate: [10, 15, 0], transition: { repeat: Infinity, repeatDelay: 1 } }
+  };
+
   return (
     <div className="MySkills" id='mySkillsId'>
 
 <div className="HoverItContainer">
-  <h2>Hover me</h2>
+  <motion.h2 variants={variants} animate={musicFlagValue ? 'rotate' : 'stop'}>Hover me</motion.h2>
 <img src='/images/my_skills_arrow.jpg' />
 </div>
       

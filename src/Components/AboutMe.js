@@ -1,19 +1,25 @@
 import '../Css/AboutMe.css';
+import {useContext} from 'react';
 import {motion} from 'framer-motion';
 import Lottie from 'react-lottie';
 import aboutMeAnim from '../Animations/about_me.json';
+import {MusicFlag} from '../Components/Helpers/MusicContext';
 
 
 function AboutMe() {
+
+  const {musicFlagValue, setMusicFlagValue} = useContext(MusicFlag);
+
   return (
     <div className="AboutMe" id='aboutMeId'>
 
 <div className='Animation'>
       <Lottie 
+      isPaused={musicFlagValue ? true : false}
       options={{
         animationData: aboutMeAnim,
         loop: true,
-        autoplay: false,
+        autoplay: musicFlagValue,
       }} />
       </div>
 

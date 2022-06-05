@@ -2,12 +2,21 @@ import '../Css/Contact.css';
 import {motion} from 'framer-motion';
 import ContactForm from './ContactForm.js';
 import GoogleMap from '../Components/GoogleMap.js';
+import {useContext} from 'react';
+import {MusicFlag} from "../Components/Helpers/MusicContext.js";
 
 
 function Contact() {
+  const {musicFlagValue, setMusicFlagValue} = useContext(MusicFlag);
+  const variants = {
+    
+    stop: { x: [0, -100, 0], y: [0, 50, 0], transition: { repeat: Infinity, repeatDelay: 1 } }
+  };
+
+
   return (
     <div className="Contact" id='contactId'>
-      <img src='/images/contact_me_arrow.jpg' />
+      <motion.img variants={variants} animate={musicFlagValue ? 'rotate' : 'stop'} src='/images/contact_me_arrow.jpg' />
       <div className='Title'>
       <motion.p transition={{ type: 'tween', duration: 0.3 }}
          whileHover={{ scale: 1.1, originX: 1.1, originY: -0.4, color: '#FD2155', }}>

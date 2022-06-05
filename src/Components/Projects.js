@@ -1,16 +1,22 @@
 import '../Css/Projects.css';
+import { useContext } from 'react';
 import {motion} from 'framer-motion';
 import {Grid} from '@material-ui/core';
 import {ProjectsData} from "./Helpers/ProjectsData.js";
-
+import {MusicFlag} from "../Components/Helpers/MusicContext.js";
 
 function Projects() {
+  const {musicFlagValue, setMusicFlagValue} = useContext(MusicFlag);
+  const variants = {
+    stop: { y: [0, 20, 0], transition: { repeat: Infinity, repeatDelay: 3, }}
+  };
+
 
   return (
     <div className="Projects" id='projectsId'>
       <div className='Arrow'>
         <img src='/images/projects_arrow.jpg'/>
-        <h2>Hover and click me!</h2>
+        <motion.h2 variants={variants} animate={musicFlagValue ? 'rotate' : 'stop'}>Hover and click me!</motion.h2>
       </div>
       <div className='Title'>
        <motion.p transition={{ type: 'tween', duration: 0.3 }}
