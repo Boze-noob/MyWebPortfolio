@@ -19,7 +19,7 @@ function AboutMe() {
       options={{
         animationData: aboutMeAnim,
         loop: true,
-        autoplay: musicFlagValue,
+        autoplay: false,
       }} />
       </div>
 

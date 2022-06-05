@@ -44,7 +44,16 @@ function ContactForm(){
                             <label for="name" className="form_label">Message</label>
                         </div>
                         <div className="Button">
-                        <input type="submit" className="btn btn-info" value="Send Message"></input>
+                        <input type="submit" className="btn" value="Send Message" style={{
+        borderWidth: 2,
+        borderColor: "#21b6ae",
+        fontFamily: "Lucida Sans",
+        color: 'white',
+        padding: '10px 35px 10px 35px',
+        backgroundColor: "transparent",
+        fontSize: "large",
+        marginTop : "20px"
+    }}></input>
                         </div>
                     </div>
                 </form>
