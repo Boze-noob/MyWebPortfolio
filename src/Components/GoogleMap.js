@@ -15,7 +15,7 @@ import mapStyle from "../Components/Helpers/MapStyle.js";
         return (
             <Map 
             google={this.props.google}
-            style ={{width:"50%" , height:"50%"}}
+            style ={{width:"90%" , height:"70%"}}
             zoom = {8}
             onReady={(mapProps, map) => this._mapLoaded(mapProps, map)}
             initialCenter = {

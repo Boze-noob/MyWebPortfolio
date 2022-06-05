@@ -21,7 +21,6 @@ function App() {
       <AboutMe />
       <Contact />
       </MusicFlag.Provider>
-      <h3>Made by Boze-noob</h3>
     </div>
   );
 }
