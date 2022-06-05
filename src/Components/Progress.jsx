@@ -6,7 +6,8 @@ const Container = Styled.div`
 
 div{
   width: ${props => parseFloat(props.width) * 1.5 };
-    margin-top: 30px;
+    margin-top: 20px;
+    height: 30px;
 }
 
 div:hover progress[value] {
@@ -20,6 +21,7 @@ div:hover progress[value] {
     color: ${props => props.color};
     padding-left: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-size: 25px;
   }
 
   span:hover{
