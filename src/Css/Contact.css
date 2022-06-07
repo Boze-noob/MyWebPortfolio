@@ -1,3 +1,9 @@
+@media (max-width: 1500px) {
+    .Contact img{
+        display: none;
+    }
+ }
+
 .Contact {
     background-color: #1d1d1d;
     display: inline-block;
