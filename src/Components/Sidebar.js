@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
 import "../App.css";
-import {SidebarData} from "./Helpers/SidebarData";
+import {SidebarData} from "./Data/SidebarData";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Route } from 'react-router-dom';
 
 function Sidebar() {
 

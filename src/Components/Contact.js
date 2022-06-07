@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 import ContactForm from './ContactForm.js';
 import GoogleMap from '../Components/GoogleMap.js';
 import {useContext} from 'react';
-import {MusicFlag} from "../Components/Helpers/MusicContext.js";
+import {MusicFlag} from "../Components/Data/MusicContext.js";
 
 
 function Contact() {
@@ -23,7 +23,7 @@ function Contact() {
            Contact me</motion.p>
     </div>
     <div className='Description'>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+        <p>I’m interested in freelance opportunities – especially medium or large projects. However, if you have other request or question, don’t hesitate to use the form.</p>
       </div>
       <div className='ContactForm'>
       <ContactForm />

@@ -82,23 +82,23 @@
   .flip-card-front {
     background-color: #bbb;
     color: black;
-    border-radius: 40px;
-    border: black 2px solid;
+    border-radius: 30px;
+    border: black 1px solid;
   }
 
   .flip-card-front img{
     width: 300px;
     height: 200px;
-    border-radius: 40px;
-    opacity: 0.8;
+    border-radius: 30px;
+    opacity: 0.9;
   }
   
   .flip-card-back {
-    background-color: #F03F6A;
+    background-color: #29EFD2;
     transform: rotateY(180deg);
-    border-radius: 40px;
+    border-radius: 30px;
     color: #1d1d1d;
-    border: black 4px solid;
+    border: black 1px solid;
   }
 
   .Projects .Arrow {

@@ -2,11 +2,13 @@ import '../Css/MySkills.css';
 import {useContext} from 'react';
 import ProgressBar from './Progress';
 import { motion } from 'framer-motion';
-import {ProgressBarData} from "./Helpers/ProgressBarData.js"; 
-import {MusicFlag} from "../Components/Helpers/MusicContext.js";
+import {ProgressBarData} from "./Data/ProgressBarData.js"; 
+import {MusicFlag} from "../Components/Data/MusicContext.js";
 
 function MySkills() {
   const {musicFlagValue, setMusicFlagValue} = useContext(MusicFlag);
+  const githubLink = <a href='https://github.com/Boze-noob'>github</a>;
+  const contactMeLink = <a href='#contactId'>contact me</a>;
   const variants = {
     
     stop: { y: [0, -20, 0], rotate: [10, 15, 0], transition: { repeat: Infinity, repeatDelay: 1 } }
@@ -31,7 +33,7 @@ function MySkills() {
     }
       </div>
       <div className='Description'>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Since beginning of my journey as mobile developer 2 years ago, I made two bigger and ten smaller, less complex mobile apps/games which generated over 10 000 downloads on Google Play. Apps has been build with good practices which makes them easy to refactor and expand. Languages that I mostly used were Java and XML besides that, Kotlin and Dart. I have experience using most popular platforms and libraries for app development and distribution as Bloc, GetX, Jetpack compose, Glide, Firebase, OneSignal, Google Play and much more! Also I have little experience in developing mobile games and web applications using Unreal Engine/ Flutter and React. I made few static web sites using pure HTML/CSS and WordPress which had very complex UI.\n\nVisit my {githubLink} profile for little more details or just {contactMeLink}.</p>
       </div>
       <div className='ProgressBars'>
         {

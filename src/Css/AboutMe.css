@@ -30,6 +30,10 @@
     clear: left;
 }
 
+.AboutMe .Description p {
+    white-space: pre-line;
+}
+
 .AboutMe .Animation{
     width: 450px;
     height: 450px;

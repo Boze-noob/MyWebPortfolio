@@ -3,12 +3,13 @@ import {useContext} from 'react';
 import {motion} from 'framer-motion';
 import Lottie from 'react-lottie';
 import aboutMeAnim from '../Animations/about_me.json';
-import {MusicFlag} from '../Components/Helpers/MusicContext';
+import {MusicFlag} from './Data/MusicContext';
 
 
 function AboutMe() {
 
   const {musicFlagValue, setMusicFlagValue} = useContext(MusicFlag);
+  const description = 'I have always loved spending time in front of  my computer, programming and playing video games, that love later grew into a career. On third year of college me and my team won second place on mobile development tournament and since than I am making mobile apps.\nCurrently studying backend(Node.js). At free time I like to workout, play sports, hang out with my dog, watch netflix and ofc code.\n\nInterested in the entire mobile development spectrum and working on ambitious projects with positive people.';
 
   return (
     <div className="AboutMe" id='aboutMeId'>
@@ -29,7 +30,8 @@ function AboutMe() {
            About me</motion.p>
     </div>
     <div className='Description'>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>{description}</p>
+        <a href='#contactId' style={{color:"#21b6ae" ,fontWeight: "400", fontSize: "large"}}>Lets make something special!</a>
       </div>
     </div>
     )}

@@ -2,8 +2,9 @@ import '../Css/Projects.css';
 import { useContext } from 'react';
 import {motion} from 'framer-motion';
 import {Grid} from '@material-ui/core';
-import {ProjectsData} from "./Helpers/ProjectsData.js";
-import {MusicFlag} from "../Components/Helpers/MusicContext.js";
+import {ProjectsData} from "./Data/ProjectsData.js";
+import {MusicFlag} from "./Data/MusicContext.js";
+import { Link } from 'react-router-dom';
 
 function Projects() {
   const {musicFlagValue, setMusicFlagValue} = useContext(MusicFlag);
@@ -24,26 +25,27 @@ function Projects() {
            Projects</motion.p>
     </div>
     <div className='Description'>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p>A small gallery of recent projects I’ve been involved in. Feel free to check them out.</p>
     </div>
     <div className='Grid'>
     <Grid container spacing={3}>
       {
         ProjectsData.map((val, key) => {
           return <Grid item>
-         <div class="flip-card">
+
+       <div class="flip-card" onClick={() => window.open(val.link)}>
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src='/images/sidebar_b.jpg' />
+      <img src= {val.image}/>
     </div>
     <div class="flip-card-back">
-      <h1>John Doe</h1>
-      <p>Architect Engineer</p>
-      <p>We love that guy</p>
+      <h1>{val.title}</h1>
+      <p>{val.description}</p>
     </div>
   </div>
 </div>
-          </Grid> 
+
+          </Grid>
         }
         )
       }

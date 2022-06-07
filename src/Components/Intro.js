@@ -7,7 +7,7 @@ import React, {useState, useRef, useContext } from 'react';
 import androidJetpackAnim from '../Animations/android_jetpack.json';
 import programmingAnim from '../Animations/guy_programming.json';
 import Lottie from 'react-lottie';
-import {MusicFlag} from "../Components/Helpers/MusicContext.js"
+import {MusicFlag} from "../Components/Data/MusicContext.js"
 
 
 function Intro() {

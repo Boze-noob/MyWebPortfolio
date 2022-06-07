@@ -6,7 +6,7 @@ import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
 import MySkills from "./Components/MySkills";
 import Contact from "./Components/Contact";
-import { MusicFlag } from "./Components/Helpers/MusicContext";
+import { MusicFlag } from "./Components/Data/MusicContext";
 
 function App() {
 

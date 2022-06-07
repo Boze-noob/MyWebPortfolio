@@ -1,6 +1,6 @@
 import { Component } from "react";
 import {Map, GoogleApiWrapper, Marker} from "google-maps-react";
-import mapStyle from "../Components/Helpers/MapStyle.js";
+import mapStyle from "../Components/Data/MapStyle.js";
 
  class MapContainer extends Component {
 
@@ -16,7 +16,7 @@ import mapStyle from "../Components/Helpers/MapStyle.js";
             <Map 
             google={this.props.google}
             style ={{width:"90%" , height:"70%"}}
-            zoom = {8}
+            zoom = {15}
             onReady={(mapProps, map) => this._mapLoaded(mapProps, map)}
             initialCenter = {
                 {
@@ -26,7 +26,7 @@ import mapStyle from "../Components/Helpers/MapStyle.js";
             }
             >
                 <Marker 
-                title = {"This is my location"}
+                title = {"My current location. Come to coffee if you are near by!"}
                 name = {"My location"}
                 position={{lat: 43.38617, lng: 17.58424}}
                 />
