@@ -83,3 +83,10 @@ body{
 .SidebarList #active{
   color: #08FDD8;
 }
+
+.Alert {
+  background-color: #1d1d1d;
+  color: #08FDD8;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
