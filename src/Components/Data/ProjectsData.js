@@ -27,7 +27,7 @@ export const ProjectsData = [
         title: "Fast Food Popaj",
         description: "Java & XML",
         image: "/images/popeye_icon.jpeg",
-        link: "", 
+        link: "https://play.google.com/store/apps/details?id=com.applid.popajfastfood", 
     },
     {
         title: "Tic Tac Toe",
