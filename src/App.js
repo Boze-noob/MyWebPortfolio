@@ -14,7 +14,7 @@ function App() {
   const [musicFlagValue, setMusicFlagValue] = useState(true);
   if(isMobile) {
     return (
-        <div className='Alert'>Portfolio is only avaliable using desktop!</div>
+        <div className='Alert'><h1>Coming soon....Portfolio is only avaliable using desktop!</h1></div>
     )
 }
   return (
