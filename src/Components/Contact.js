@@ -9,8 +9,7 @@ import {MusicFlag} from "../Components/Data/MusicContext.js";
 function Contact() {
   const {musicFlagValue, setMusicFlagValue} = useContext(MusicFlag);
   const variants = {
-    
-    stop: { x: [0, -100, 0], y: [0, 50, 0], transition: { repeat: Infinity, repeatDelay: 1 } }
+    stop: { x: [0, -10, 0], y: [0, 10, 0], transition: { repeat: Infinity, repeatDelay: 1 }, },
   };
 
 
